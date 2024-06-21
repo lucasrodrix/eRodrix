@@ -136,12 +136,183 @@ button{
 .color-gray-dark{
     color: var(--color-gray-dark);
 }
-/* Botões e Cores */
-
 
 /* Tamanho  da Fonte */
+.font-text-sub{
+    font-size: 0.8em;
+}
+.font-text-min{
+    font-size: 1em;
+}
+.font-text-medium{
+    font-size: 1.2em;
+}
+.font-text-medium-extra{
+    font-size: 1.5em;
+}
+.font-text-max{
+    font-size: 2em;
+}
+
+@media(max-width: 900px){
+    .font-text-max{
+        font-size: 1.8em;
+    }
+}
+@media(max-width: 600px){
+    .font-text-sub{
+        font-size: 0.7em;
+    }
+    .font-text-min{
+        font-size: 0.9em;
+    }
+    .font-text-medium{
+        font-size: 1em;
+    }
+    .font-text-medium-extra{
+        font-size: 1.2em;
+    }
+    .font-text-max{
+        font-size: 1.6em;
+    }
+}
+
 /* Estilo da Fonte */
+.font-weight-min{
+    font-weight: 300;
+}
+.font-weight-medium{
+    font-weight: 600;
+}
+.font-weight-max{
+    font-weight: 900;
+}
+
+/* Alinhamento de Texto */
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-justify{
+    text-align: justify;
+}
+
+@media(max-width: 600px){
+    .text-left{
+        text-align: center;
+    }
+    .text-right{
+        text-align: center;
+    }
+    .text-justify{
+        text-align: center;
+    }
+}
+
+/* Botões e Cores */
+.btn_edit{
+    padding: 1% 2%;
+    color: var(--color-green);
+    background-color: var(--color-green);
+}
+.btn_new{
+    padding: 1% 2%;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+}
+.btn_delete{
+    padding: 1% 2%;
+    color: var(--color-white);
+    background-color: var(--color-red);
+}
+.btn_search{
+    padding: 1% 2%;
+    color: var(--color-white);
+    background-color: var(--color-orange);
+}
+.btn_off{
+    padding: 1% 2%;
+    color: var(--color-white);
+    background-color: var(--color-gray);
+}
+.btn_pager{
+    padding: 1% 2%;
+    color: var(--color-white);
+    background-color: var(--color-green-dark);
+}
+
+.btn_edit:hover{
+    background-color: var(--color-green-dark);
+}
+.btn_new:hover{
+    background-color: var(--color-blue-dark);
+}
+.btn_delete:hover{
+    background-color: var(--color-red-dark);
+}
+.btn_search:hover{
+    background-color: var(--color-orange-dark);
+}
+.btn_off:hover{
+    background-color: var(--color-gray-dark);
+}
+.btn_pager:hover{
+    background-color: var(--color-green);
+}
+
 /* Flutuação de Elementos */
+.divisor1{
+    width: 100%;
+    margin: 0;
+    height: auto;
+}
+.divisor2{
+    width: 48.4%;
+    margin: 10px 0 10px 1.1%;
+    height: auto;
+    float: left;
+}
+.divisor3{
+    width: 31.9%;
+    margin: 10px 0 10px 1.1%;
+    height: auto;
+    float: left;
+}
+.divisor4{
+    width: 23.8%;
+    margin: 10px 0 10px 1.1%;
+    height: auto;
+    float: left;
+}
+
+@media(max-width: 30em){
+    .divisor2, .divisor3, .divisor4{
+        width: 96%;
+        margin: 10px 2%;
+    }
+}
+@media(max-width: 30em) and (max-width: 48em){
+    .divisor2, .divisor3{
+        width: 96%;
+        margin: 10px 2%;
+    }
+    .divisor4{
+        width: 48.4%;
+        margin: 10px 0 10px 1.1%;
+    }
+}
+/* @media(max-width: 48em) and (max-width: 80em){
+    .divisor4{
+        width: 48.4%;
+        margin: 10px 2%;
+    }
+} */
+
 /* Mensagens Dinamicas */
 /* Modais */
 /* Carregamento de Página */
