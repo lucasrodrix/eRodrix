@@ -1,0 +1,147 @@
+/* Tags Gerais */
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 1em;
+    font-family: Nunito, sans-serif;
+}
+body{
+    background-color: #ffffff;
+}
+img{
+    max-width: 100%;
+}
+a.img{
+    border: 0;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+button{
+    cursor: pointer;
+}
+
+/* Padrões de Cores */
+:root{
+    --color-red: #de0c11;
+    --color-red-dark: #f70e13;
+
+    --color-blue: #235580;
+    --color-blue-dark: #09316f;
+
+    --color-green: #2e9b50;
+    --color-green-dark: #247c40;
+
+    --color-white: #ffffff;
+    --color-white-dark: #eeeeee;
+
+    --color-yellow: #fafa61;
+    --color-dark: #555555;
+    
+    --color-orange: #ff5e10;
+    --color-orange-dark: #cc4b0c;
+
+    --color-gray: #b0acac;
+    --color-gray-dark: #8c8989;
+}
+
+/* Classes Gerais */
+.clear{
+    clear: both;
+}
+.text-margin{
+    margin: 0 30px;
+}
+.radius{
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+/* Planos de Fundos - Cores */
+.bgcolor-red{
+    background-color: var(--color-red);
+}
+.bgcolor-red-dark{
+    background-color: var(--color-red-dark);
+}
+.bgcolor-blue{
+    background-color: var(--color-blue);
+}
+.bgcolor-blue-dark{
+    background-color: var(--color-blue-dark);
+}
+.bgcolor-green{
+    background-color: var(--color-green);
+}
+.bgcolor-green-dark{
+    background-color: var(--color-green-dark);
+}
+.bgcolor-white{
+    background-color: var(--color-white);
+}
+.bgcolor-white-dark{
+    background-color: var(--color-white-dark);
+}
+.bgcolor-yellow{
+    background-color: var(--color-yellow);
+}
+.bgcolor-gray{
+    background-color: var(--color-gray);
+}
+.bgcolor-gray-dark{
+    background-color: var(--color-gray-dark);
+}
+
+/* Cores das Fontes */
+.color-red{
+    color: var(--color-red);
+}
+.color-red-dark{
+    color: var(--color-red-dark);
+}
+.color-blue{
+    color: var(--color-blue);
+}
+.color-blue-dark{
+    color: var(--color-blue-dark);
+}
+.color-green{
+    color: var(--color-green);
+}
+.color-green-dark{
+    color: var(--color-green-dark);
+}
+.color-white{
+    color: var(--color-white);
+}
+.color-white-dark{
+    color: var(--color-white-dark);
+}
+.color-yellow{
+    color: var(--color-yellow);
+}
+.color-gray{
+    color: var(--color-gray);
+}
+.color-gray-dark{
+    color: var(--color-gray-dark);
+}
+/* Botões e Cores */
+
+
+/* Tamanho  da Fonte */
+/* Estilo da Fonte */
+/* Flutuação de Elementos */
+/* Mensagens Dinamicas */
+/* Modais */
+/* Carregamento de Página */

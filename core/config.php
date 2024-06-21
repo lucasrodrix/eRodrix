@@ -25,7 +25,7 @@
     $themePainel = 'themes/painel';
     $themeAdmin = 'themes/admin';
 
-    //Configutrações do Banco de Dados
+    //Configurações do Banco de Dados
 
     //Configurações dos Perfis de Acesso
 
