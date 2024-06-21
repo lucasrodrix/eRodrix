@@ -1,5 +1,5 @@
 <?php 
-    $configBase = 'http://localhost:8080/';
+   require_once "core/config.php";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -10,25 +10,25 @@
     <meta name="description" content="index,follow">
     <meta name="description" content="">
 
-    <meta itemprop="name" content="nome-do-site">
-    <meta itemprop="description" content="descrição-do-site">
-    <meta itemprop="image" content="imagem-do-site">
+    <meta itemprop="name" content="<?= $titleSite ?>">
+    <meta itemprop="description" content="<?= $description ?>">
+    <meta itemprop="image" content="<?= $imageSite ?>">
     <meta itemprop="BASE" content="<?= $configBase ?>">
 
     <!-- FACEBOOK -->
     <meta property="og:type" content="article">
-    <meta property="og:title" content="nome-do-site">
-    <meta property="og:description" content="descrição-do-site">
-    <meta property="og:image" content="imagem-do-site">
+    <meta property="og:title" content="<?= $titleSite ?>">
+    <meta property="og:description" content="<?= $description ?>">
+    <meta property="og:image" content="<?= $imageSite ?>">
     <meta property="og:BASE" content="<?= $configBase ?>">
     <meta property="og:locale" content="pt_br">
 
     <!-- TWITTER -->
     <meta property="twitter:card" content="sumary_large_image">
     <meta property="twitter:domain" content="<?= $configBase ?>">
-    <meta property="twitter:title" content="titulo-do-site">
-    <meta property="twitter:description" content="descricao-do-site">
-    <meta property="twitter:image" content="imagem-do-site">
+    <meta property="twitter:title" content="<?= $titleSite ?>">
+    <meta property="twitter:description" content="<?= $description ?>">
+    <meta property="twitter:image" content="<?= $imageSite ?>">
     <meta property="twitter:BASE" content="<?= $configBase ?>">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -41,7 +41,7 @@
     
     <script src="<?= $configBase ?>views/js/jquery.js"></script>
 
-    <title>Plataforma eRodrix</title>
+    <title><?= $titleSite ?></title>
 </head>
 <body>
     <?php 
