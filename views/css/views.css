@@ -314,5 +314,198 @@ button{
 } */
 
 /* Mensagens Dinamicas */
+.alert-error{
+    padding: 10px 20px  ;
+    color: var(--color-white);
+    background-color: var(--color-red);
+    text-align: center;
+}
+.alert-success{
+    padding: 10px 20px  ;
+    color: var(--color-white);
+    background-color: var(--color-green);
+    text-align: center;
+}
+.alert-info{
+    padding: 10px 20px  ;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    text-align: center;
+}
+.alert-warning{
+    padding: 10px 20px  ;
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    text-align: center;
+}
+.status-error{
+    background-color: var(--color-red);
+}
+.status-success{
+    background-color: var(--color-green);
+}
+.status-info{
+    background-color: var(--color-blue);
+}
+.status-warning{
+    background-color: var(--color-orange);
+}
+#status_container{
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: fixed;
+    z-index: 900;
+    pointer-events: none;
+}
+.status_title{
+    font-weight: 700;
+}
+.status-message{
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.status-message a, .status-message label{
+    color: #fff;
+}
+.status-message a:hover{
+    color: #ccc;
+    text-decoration: none;
+}
+.status-close-button{
+    position: relative;
+    right: 3em;
+    top: 3em;
+    float: right;
+    font-size: 20px;
+    color: var(--color-white);
+    -webkit-text-shadow: 0 1px 0 #fff;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 8;
+    -ms-filter:progid: DXimageTransform.Microsoft.Alpha(Opacity=70);
+    filter: alpha(opacity=70);
+    line-height: 1;
+}
+.rtl .statjs-close-button{
+    left: 3em;
+    float: left;
+    right: 3em;
+}
+button.status-close-button{
+    padding: 0;
+    cursor: pointer;
+    border: 0;
+    -webkit-appearance: none;
+}
+.status-top-right{
+    top: 12px;
+    right: 12px;
+}
+#status_container>div{
+    position: relative;
+    pointer-events: auto;
+    overflow: hidden;
+    margin: 0 0 6px;
+    padding: 15px 15px 15px 15px;
+    width: 350px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    color: var(--color-white);
+    opacity: 1.0;
+    -ms-filter: progid: DXimageTransform.Microsoft.Alpha(Opacity=70);
+    filter: alpha(opacity=70);
+}
+
 /* Modais */
+.modal{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    background-color: rgba(142, 142, 142, 0.8);
+    display: none;
+}
+.modal .modal_container{
+    width: 60%;
+    margin:auto 20%;
+    background-color: var(--color-white);
+    position: relative;
+    max-width: 96%;
+    overflow: hidden;
+    display: flex;
+}
+.open_modal{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    background-color: rgba(142, 142, 142, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+.open_modal .open_container{
+    width: 60%;
+    margin: 78px 20%;
+    background-color: var(--color-white);
+    position: relative;
+    max-width: 96%;
+    overflow: hidden;
+}
+
+@media(max-width: 720px){
+    .open_modal .open_container{
+        width: 90%;
+        margin: 0 5%;
+        top: 60px;
+    }
+}
+
+/* Paginação */
+.paginator{
+    width: 100%;
+    margin: 10px;
+    padding: 10px 20px !important;
+}
+.paginator .pagination_link{
+    padding: 10px 20px;
+    color: #333;
+}
+.paginator .pagination_link:hover{
+    background-color: #2e9b50;
+    color: var(--color-white);
+}
+.paginator .pagination{
+    background-color: #1c6333;
+    color: var(--color-white);
+}
+
 /* Carregamento de Página */
+.loading{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+.loading img{
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
