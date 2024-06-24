@@ -54,5 +54,7 @@
     <script src="<?= $configBase ?>views/js/views.js"></script>
     <script src="<?= $configBase ?>ajax/ajax.js"></script>
     <script src="<?= $configBase ?>theme/loja/themes.js"></script>
+
+    <h1>Página Principal</h1>
 </body>
 </html>

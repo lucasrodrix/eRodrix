@@ -6,7 +6,7 @@
     date_default_timezone_set('America/Sao_Paulo');
 
     //Configurações do site
-    $configBase = 'http://localhost:8080/';//URL da Loja
+    $configBase = 'http://localhost/eRodrix/';//URL da Loja
     $titleSite = 'Plataforma eRodrix'; //Nome da Loja ou da Empresa
     $description = 'Projeto de Estudo - E-Commerce PHP/Ajax';//Descrição Completa da loja
     $imageSite = 'default.png';//Imagem da Loja
