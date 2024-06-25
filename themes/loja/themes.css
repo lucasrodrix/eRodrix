@@ -1,3 +1,14 @@
+.container_main{
+    margin: 0;
+    width: 100%;
+    height: auto
+}
+.container_main .container_controller{
+    margin: 30px 10%;
+    width: 80%;
+    height: auto
+}
+
 /* Container Top */
 .container_top{
     margin: 30px 0;
@@ -10,8 +21,8 @@
     height: auto;
     border: 1px solid #eeeeee;
 }
-.container_top h1{
-    margin: 50px 0 -20px 0;
+.container_top h1{ 
+    margin: 50px 0 20px 20px;
 }
 .container_top .container_top_info li{
     display: inline-block;

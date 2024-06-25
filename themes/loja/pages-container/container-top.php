@@ -33,7 +33,7 @@
         </ul>
         <div class="clear"></div>
     </div>
-    <h1 class="font-text-medium font-weight-medium text-left m-text-center">Mais Vendidos da Semana</h1>
+    <h1 class="font-text-medium font-weight-medium text-left m-text-center">Mais Vendidos da Semana:</h1>
     <div class="container_top_info">
         <ul class="caroussel">
             <?php for($i = 0; $i < 2; $i++):?>
