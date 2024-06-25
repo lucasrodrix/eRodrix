@@ -217,7 +217,7 @@ button{
 /* Botões e Cores */
 .btn_edit{
     padding: 1% 2%;
-    color: var(--color-green);
+    color: var(--color-white);
     background-color: var(--color-green);
 }
 .btn_new{
