@@ -197,7 +197,7 @@
                     <input type="search" name="input_search" id="input_search" placeholder="Pesquise aqui..." class="radius">
                 </div>
                 <div class="header_frm_btn">
-                    <button name=btn_serach id=btn_serach class="radius">
+                    <button name=btn_search id=btn_search class="radius btn_edit">
                         <i class="fas fa-search"></i>
                     </button>
                 </div>

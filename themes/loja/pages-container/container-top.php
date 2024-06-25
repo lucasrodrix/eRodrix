@@ -46,9 +46,9 @@
                         <h2 class="text-left m-text-center font-weight-medium font-text-min">Tenis Adidas Sporting</h2>
                         <p class="text-left m-text-center font-text-min">
                             <span class="price_old radius font-text-sub radius"><s>R$ 450,00</s></span>
-                            <span class="price_off radius font-text-min font-weight-medium">R$ 320,00</span>
+                            <span class="price_off radius font-text-min font-weight-medium"><s>R$ 320,00</s></span>
                         </p>
-                        <p class="text-left m-text-center font-wtext-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sit ratione impedit sunt corporis dolorum debitis animi reiciendis aliquid quidem officiis autem deserunt illum exercitationem sint, enim odit hic odio!</p>
+                        <p class="text-left m-text-center font-wtext-sub">Fugiat, sit ratione impedit sunt corporis dolorum debitis animi reiciendis aliquid quidem officiis autem deserunt illum exercitationem sint, enim odit hic odio!</p>
                         <p class="text-center font-weithg-min font-text-sub actions">
                             <a href="<?= $configBase ?>details/<?= $i ?>" title="Detalhes do Produto" class="btn_edit radius">
                                 <i class="fa fa-images"></i>

@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="<?= $configBase ?>views/css/views.css">
-    <link rel="stylesheet" href="<?= $configBase ?>theme/loja/theme.css">
+    <link rel="stylesheet" href="<?= $configBase ?>themes/loja/themes.css">
     
     <script src="<?= $configBase ?>views/js/jquery.js"></script>
 
@@ -53,6 +53,6 @@
     
     <script src="<?= $configBase ?>views/js/views.js"></script>
     <script src="<?= $configBase ?>ajax/ajax.js"></script>
-    <script src="<?= $configBase ?>theme/loja/themes.js"></script>
+    <script src="<?= $configBase ?>themes/loja/themes.js"></script>
 </body>
 </html>
