@@ -1,3 +1,4 @@
+/* Container Main */
 .container_main{
     margin: 0;
     width: 100%;
@@ -66,6 +67,31 @@
     margin: 5px 0;
 }
 
+/* Banners */
+.container_banner{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.container_banner img{
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+.container_banner .div_banner{
+    float: left;
+    padding: 10px 0;
+    width: 49%;
+    margin: 0 2% 0 0;
+}
+.container_banner .div_banner:nth-of-type(2n+0){
+    margin-right: 0;
+}
+.divisor1 .img-medium-banner{
+    width: 100% !important;
+    margin: 0;
+}
+
 /*Responsividade*/
 @media(max-width: 930px){
     .container_top .container_top_info li{
@@ -89,5 +115,17 @@
     }
     .container_top .container_top_info .caroussel li .price_off{
         text-align: center !important;
+    }
+}
+@media(max-width: 600px){
+    .container_banner .div_banner{
+        display: block;
+        clear: both;
+        padding: 10px 0;
+        width: 100%;
+        margin: 0;
+    }
+    .none{
+        display: none;
     }
 }
