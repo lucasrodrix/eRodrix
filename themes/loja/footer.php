@@ -1,6 +1,67 @@
 <style>
-
+    /**Footer */
+    .footer_bg{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        background-color: #444;
+    }
+    .footer_bg .footer_main{
+        width: 80%;
+        height: auto;
+        margin: 0 10%;
+        padding: 50px 0;
+        font-size: 0.8em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer_main ul{
+        width: 90%;
+        margin: 0 5%;
+        padding: 5px 10px;
+        display: block;
+    }
+    .footer_main a{
+        padding: 10px 15px;
+        color: #fff;
+        display: block;
+        text-align: center;
+    }
+    .footer_main .footer_socials{
+        display: inline-block;
+    }
+    .footer_main .footer_contact{
+        padding: 3px 0;
+    }
+    .footer_main li{
+        display: block;
+    }
+    .footer_main a:hover,
+    .footer_main li:hover{
+        text-decoration: underline;
+        color: #fff;
+    }
+    .footer_bg .footer_down{
+        width: 100%;
+        margin: 0;
+        font-size: 0.8em;
+        background-color: #333;
+        padding: 20px 0;
+    }
+    .footer_down h1{
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+    }
+    .footer_down p{
+        font-size: 0.8em;
+        text-align: center;
+        color: #fff;
+    }
 </style>
+
 <div class="clear"></div>
 <article class="footer_bg">
     <div class="footer_main">
@@ -56,7 +117,7 @@
                     <a href="#" title="Fale conosco via Whatsapp" class="radius footer_contact">
                         <li>
                             <i class="fab fa-whatsapp"></i>
-                            <?= $phoneSite ?>
+                            <?= $whatsappSite ?>
                         </li>
                     </a>
                     <a href="mailto:<?= $mailSite ?>" title="Fale conosco via E-mail" class="radius footer_contact">

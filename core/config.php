@@ -12,6 +12,7 @@
     $imageSite = 'default.png';//Imagem da Loja
     $mailSite = 'contato@gruporodrix.net';//Site principal da loja
     $phoneSite = '(00) 0000-0000'; //Telefone da Loja
+    $whatsappSite = '(00) 0000-0000'; //Whatsapp da Loja
     $statusSite = 1;//0 - Inativo, 1 - Ativo, 2 - Em manutenção
     $hellobar = 0;//Modal da promoção - 0 - Inativo, 1 - Ativo
 
