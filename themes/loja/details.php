@@ -2,15 +2,17 @@
 <?php include_once 'header.php';?>
 
 <main class="container">
-    <div class="container_controller bgcolor-gray">
-        <div class="container_details">
-            <p class="paragraph_navigator color-white-dark">
-                <a href="<?= $configBase?>home" title="Retornar a Página Principal">
-                    <i class="fa fa-home"></i>Home
-                </a>/Produto
-            </p>
+    <section class="container_main">
+        <div class="container_controller bgcolor-gray">
+            <div class="container_details">
+                <p class="paragraph_navigator color-white-dark">
+                    <a href="<?= $configBase?>home" title="Retornar a Página Principal">
+                        <i class="fa fa-home"></i>Home
+                    </a>/Produto
+                </p>
+            </div>
         </div>
-    </div>
+    </section>
     <section class="container_main">
         <div class="container_controller">
             <div class="container_details">
