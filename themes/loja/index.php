@@ -3,6 +3,17 @@
 
 <main class="container">
     <section class="container_main">
+        <div class="container_controller bgcolor-gray">
+            <div class="container_details">
+                <p class="paragraph_navigator color-white-dark">
+                    <a href="<?= $configBase?>home" title="Retornar a Página Principal">
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>       
+    <section class="container_main">
         <div class="container_controller">
             <?php require 'pages-container/container-top.php';?>
             <?php require 'pages-container/container-bestsellers.php';?>
