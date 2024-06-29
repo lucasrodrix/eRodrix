@@ -242,7 +242,68 @@
     height: 240px;
 }
 
+/* Página Carrinho de Compras/Pedidos */
+.container .container_cart{
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+.container_cart .table{
+    width: 100%;
+    margin: 10px 0;
+}
+.container_cart .table .td_plus{
+    width: 30%;
+    font-size: 0.9em;
+}
+.container_cart .table .td_minus{
+    width: 10%;
+    font-size: 0.9em;
+}
+.container_cart .table .td_sub{
+    width: 7%;
+    font-size: 0.9em;
+}
+.container_cart .table img{
+    width: 100%;
+    font-size: 0.9em;
+}
+.container_cart .table td input[type=number]{
+    width: 70%;
+    font-size: 0.9em;
+    padding: 10px 10px;
+    text-align: center;
+    margin: 0 15%;
+}
+.container_cart .table td input[type=text]{
+    width: 180px;
+    font-size: 0.9em;
+    padding: 8px 10px;
+    text-align: center;
+}
+.container_cart .table td a{
+    padding: 8px 16px;
+}
+
 /*Responsividade*/
+@media(max-width: 1200px){
+    table th, table td{
+        font-size: 0.9em;
+    }
+    .container_cart{
+        overflow-x: scroll;
+    }
+    .container_cart .table a{
+        padding: 5px 10px;
+    }
+    .container_cart .table td input[type=number]{
+        width: 100%;
+        font-size: 0.9em;
+        padding: 6px 6px;
+        text-align: center;
+        margin: 0;
+    }
+}
 @media(max-width: 930px){
     .container_top .container_top_info li{
         width: 47.5%;
@@ -287,5 +348,30 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+@media(max-width: 840px){
+    .container_cart .table{
+        width: 840px;
+    }
+    .container_cart .table .td_sub{
+        width: 16%;
+        font-size: 0.8em;
+    }
+}
+@media(max-width: 720px){
+    .container_cart .table td{
+        width: 80px;
+        font: 0.8em;
+    }
+    .container_cart .table td p, .container_cart .table td h2{
+        font-size: 0.875em;
+        text-align: center;
+    }
+    .container_cart .table td input[type=number]{
+        width: 100%;
+        font-size: 0.9em;
+        padding: 6px 6px;
+        text-align: center;
     }
 }

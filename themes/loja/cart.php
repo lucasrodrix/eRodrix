@@ -50,16 +50,16 @@
                             <form method="post" id="form_discount">
                                 <input type="text" name="input_discount" id="input_discount" class="radius">
                                 <button class="btn_search radius" name="btn_discount" id="btn_discount">
-                                    <i class="fa fa-percent"></i>Descontar
+                                    <i class="fa fa-percent"></i> Descontar
                                 </button>
                             </form>
                         </td>
                         <td colspan="3">
                             <p class="text-left font-text-sub font-weight-medium">Custo do Frete:</p>
                             <form method="post" id="form_shipping">
-                                <input type="text" name="input_shipping" id="input_shipping" class="radius">
+                                <input type="text" name="input_shipping" id="input_shipping" class="radius zipcode">
                                 <button class="btn_new radius" name="btn_shipping" id="btn_shipping">
-                                    <i class="fa fa-truck"></i>Calcular
+                                    <i class="fa fa-truck"></i> Calcular
                                 </button>
                             </form>
                         </td>
