@@ -285,6 +285,70 @@
     padding: 8px 16px;
 }
 
+/* Login */
+.container_main .main_login{
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #eee;
+}
+.main_login h1{
+    margin-top: 20px;
+}
+.main_login label{
+    display: block;
+    width: 90%;
+    margin: 0 5%;
+    padding: 8px 0;
+}
+.main_login input[type=email],
+.main_login input[type=text],
+.main_login input[type=password]{
+    background-color: #eeeeee;
+    display: block;
+    width: 90%;
+    margin: 0 5%;
+    padding: 8px 16px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.main_login button{
+    display: block;
+    margin-left: 8%;
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+}
+.main_login #btn_register{
+    display: block;
+    margin-left: 5%;
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+}
+.main_login #btn_recovery{
+    padding: 8px 20px;
+    margin-bottom: 10px;
+    margin-right: 24px;
+}
+.main_login #btn_recovery:hover{
+    color: #fff;
+    background-color: #666;
+}
+.viewer{
+    position: relative;
+}
+.showHide{
+    z-index: 9999;
+    position: absolute;
+    top: 50%;
+    right: 80px;
+    cursor: pointer;
+}
+.fa-eye{
+    color: #999;
+}
+
 /*Responsividade*/
 @media(max-width: 1200px){
     table th, table td{
@@ -302,6 +366,12 @@
         padding: 6px 6px;
         text-align: center;
         margin: 0;
+    }
+    .showHide{
+        right: 50px;
+    }
+    .result{
+        font-family: Arial, Helvetica, sans-serif;
     }
 }
 @media(max-width: 930px){
@@ -349,6 +419,17 @@
         align-items: center;
         justify-content: center;
     }
+    .main_login button{
+        width: 94%;
+        margin: 10px 3%;
+    }
+    .showHide{
+        right: 40px;
+    }
+    .main_login #btn_register{
+        width: 90%;
+        margin: 10px 5% !important;
+    }
 }
 @media(max-width: 840px){
     .container_cart .table{
@@ -373,5 +454,10 @@
         font-size: 0.9em;
         padding: 6px 6px;
         text-align: center;
+    }
+}
+@media(max-width: 640px){
+    .showHide{
+        right: 40px;
     }
 }
