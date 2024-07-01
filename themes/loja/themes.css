@@ -349,6 +349,37 @@
     color: #999;
 }
 
+/* Checklist */
+.container_controller .new{
+    padding: 10px 0;
+}
+.container_controller .title_checklist{
+    text-transform: uppercase;
+    color: #666;
+}
+.container_controller .table .actions{
+    margin: 0;
+    text-align: left;
+}
+.container_controller .table .actions a{
+    margin: 10px 10px 10px 0;
+}
+
+/* Cards */
+.card4{
+    margin: 10px 1.2% 10px 0;
+    width: 24% !important;
+    padding: 20px 10px;
+}
+.card4:nth-of-type(4n+0){
+    margin-right: 0;
+}
+.card4 .actions{
+    margin-top: 10px;
+}
+.card4 a{
+    padding: 6px 12px !important;
+}
 /*Responsividade*/
 @media(max-width: 1200px){
     table th, table td{
@@ -373,6 +404,9 @@
     .result{
         font-family: Nunito, sans-serif;
     }
+    .card4{
+        width: 48%;
+    }
 }
 @media(max-width: 930px){
     .container_top .container_top_info li{
@@ -396,6 +430,15 @@
     }
     .container_top .container_top_info .caroussel li .price_off{
         text-align: center !important;
+    }
+}
+@media(max-width: 840px){
+    .container_cart .table{
+        width: 840px;
+    }
+    .container_cart .table .td_sub{
+        width: 16%;
+        font-size: 0.8em;
     }
 }
 @media(max-width: 800px){
@@ -429,15 +472,6 @@
     .main_login #btn_register{
         width: 90%;
         margin: 10px 5% !important;
-    }
-}
-@media(max-width: 840px){
-    .container_cart .table{
-        width: 840px;
-    }
-    .container_cart .table .td_sub{
-        width: 16%;
-        font-size: 0.8em;
     }
 }
 @media(max-width: 720px){

@@ -15,20 +15,20 @@
     </section>    
     <section class="container_main">
         <div class="container_controller">
-            <h2 class="text-left m-text-center font-text-sub title_checlist">Onde deseja receber seu pedido?</h2>
-            <div class="divisor4 cadr4 bgcolor-white-dark radius new">
+            <h2 class="text-left m-text-center font-text-sub title_checklist">Onde deseja receber seu pedido?</h2>
+            <div class="divisor4 card4 bgcolor-white-dark radius new">
                 <p class="text-center font-weight-medium color-dark font-text-max">
                     <i class="fa fa-plus-circle"></i>
                 </p>
                 <p class="text-center font-weight-medium color-dark font-text-sub">Novo Endereço</p>
                 <p class="text-center color-dark font-text-sub actions">
                     <a href="#" class="radius btn_new modal_adress" data-id="1">
-                        <i class="fa fa-street-view"></i>
+                        <i class="fa fa-street-view"></i>Cadastrar
                     </a>
                 </p>
             </div>
             <?php for($i = 0; $i < 3; $i++):?>
-                <div class="divisor4 cadr4 bgcolor-white-dark radius">
+                <div class="divisor4 card4 bgcolor-white-dark radius">
                     <p class="text-center font-weight-medium color-dark font-text-sub">Rua dos Teste, 0123</p>
                     <p class="text-center font-weight-medium color-dark font-text-sub">Santana - SJCampos/SP</p>
                     <p class="text-center font-weight-medium color-dark font-text-sub">CEP: 12.345-678</p>
