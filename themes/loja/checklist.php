@@ -1,6 +1,54 @@
 <?php include_once 'modal.php';?>
 <?php include_once 'header.php';?>
 
+<article class="open_modal">
+    <div class="open_container">
+        <p class="text-right">
+            <a href="#" class="btn_delete redius modal-close" title="Fechar">
+                <i class="fa fa-times-circle"></i>
+            </a>
+        </p>
+        <div class="address">
+            <h2 class="textleft m-text-center font-text-min title_checklist">Cadastrar Novo Endereço:</h2>
+            <div class="container_action">
+                <form action="#" method="post" id="form_address">
+                    <input type="hidden" name="input_id" id="input_id" value="">
+                    <div class="divisor2">
+                        <label for="zipcode">CEP: <input type="text" class="zipcode" name="zipcode" id="zipcode"></label>
+                    </div>
+                    <div class="divisor2">
+                        <label for="address">Endereço: <input type="text" class="address" name="address" id="address"></label>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="divisor3">
+                        <label for="number">Número: <input type="text" class="number" name="number" id="number"></label>
+                    </div>
+                    <div class="divisor3">
+                        <label for="complement">Complemento: <input type="text" class="complement" name="complement" id="complement"></label>
+                    </div>
+                    <div class="divisor3">
+                        <label for="neighborhood">Bairro: <input type="text" class="neighborhood" name="neighborhood" id="neighborhood"></label>
+                    </div>
+                    <div class="divisor3">
+                        <label for="city">Cidade: <input type="text" class="city" name="city" id="city"></label>
+                    </div>
+                    <div class="divisor3">
+                        <label for="state">Estado: <input type="text" class="state" name="state" id="state"></label>
+                    </div>
+                    <div class="divisor3">
+                        <br>
+                        <button class="btn_new radius" id="btn_address" name="btn_address">
+                            <i class="fa fa-street-view"></i> Salvar
+                        </button>
+                    </div>
+                    <div class="clear"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</article>
+
 <main class="container">
     <section class="container_main">
         <div class="container_controller bgcolor-gray">
