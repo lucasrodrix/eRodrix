@@ -187,7 +187,7 @@
 
     <div class="header_main">
         <div class="divisor3">
-            <a href="<?= $configBase?>home" title="Retornar a Página Principal">
+            <a href="<?= $configBase?>" title="Retornar a Página Principal">
                 <img src="<?= $configBase ?>images/general/logo.png" title="Logomarca da <?= $titleSite ?>" alt="Logomarca da <?= $titleSite ?>">
             </a>
         </div>

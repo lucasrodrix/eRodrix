@@ -6,7 +6,7 @@
         <div class="container_controller bgcolor-gray">
             <div class="container_details">
                 <p class="paragraph_navigator color-white-dark">
-                    <a href="<?= $configBase?>home" title="Retornar a Página Principal">
+                    <a href="<?= $configBase?>" title="Retornar a Página Principal">
                         <i class="fa fa-home"></i>Home
                     </a>
                 </p>

@@ -1,7 +1,7 @@
-<?php include_once 'modal.php';?>
+<!-- <?php include_once 'modal.php';?> -->
 <?php include_once 'header.php';?>
 
-<article class="open_modal" style="display: none;">
+<article class="open_modal">
     <div class="open_container">
         <p class="text-right">
             <a href="#" class="btn_delete redius modal-close" title="Fechar">
@@ -54,7 +54,7 @@
         <div class="container_controller bgcolor-gray">
             <div class="container_details">
                 <p class="paragraph_navigator color-white-dark">
-                    <a href="<?= $configBase?>home" title="Retornar a Página Principal">
+                    <a href="<?= $configBase?>" title="Retornar a Página Principal">
                         <i class="fa fa-home"></i>Home
                     </a>/Checklist
                 </p>

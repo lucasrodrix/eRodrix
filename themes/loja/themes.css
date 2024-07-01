@@ -161,9 +161,21 @@
     color: #fff;
     font-size: 0.8em;
 }
-.container_details .container_actions{
+.container_details .container_action{
     padding: 10px 0;
     margin: 20px 0;
+}
+.container_details .footer_contact{
+    margin-top: 10px !important;
+}
+.container_details .footer_socials{
+    padding: 4px 8px;
+    margin-right: 5px;
+    color: #333;
+    background-color: #eee;
+}
+.container_details .footer_socials:hover{
+    background-color: #ccc;
 }
 .container_details .img-small img{
     border: 1px solid #eee;
@@ -480,7 +492,7 @@
     .container_description .tabs a{
         display: block;
     }
-    .container_actions{
+    .container_action{
         width: 90%;
         margin: 20px 5%;
         display: flex;

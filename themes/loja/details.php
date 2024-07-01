@@ -6,7 +6,7 @@
         <div class="container_controller bgcolor-gray">
             <div class="container_details">
                 <p class="paragraph_navigator color-white-dark">
-                    <a href="<?= $configBase?>home" title="Retornar a Página Principal">
+                    <a href="<?= $configBase?>" title="Retornar a Página Principal">
                         <i class="fa fa-home"></i>Home
                     </a>/Produto
                 </p>
@@ -89,7 +89,7 @@
                     <p class="text-left m-text-center font-text-sub details_paragraph">
                         Compartilhar Produto:
                     </p>
-                    <p class="text-left m-text-center font-text-sub">
+                    <p class="text-left m-text-center font-text-sub footer_contact">
                         <a href="#" title="Acesse a nossa página no facebook" class="radius footer_socials">
                             <i class="fab fa-facebook"></i>
                         </a>
