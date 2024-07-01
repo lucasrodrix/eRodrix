@@ -380,6 +380,31 @@
 .card4 a{
     padding: 6px 12px !important;
 }
+
+/* Modal Endereço */
+.address{
+    width: 96%;
+    margin: 10px 2%;
+}
+.address h2{
+    margin: 0 8px;
+}
+.address label{
+    display: block;
+    margin: 8px 0;
+}
+.address input[type=text]{
+    display: block;
+    padding: 8px 16px;
+    background-color: #eee;
+    width: 100%;
+}
+.address button{
+    display: block;
+    padding: 10px 30px !important;
+    margin-top: 15px !important;
+}
+
 /*Responsividade*/
 @media(max-width: 1200px){
     table th, table td{
@@ -472,6 +497,13 @@
     .main_login #btn_register{
         width: 90%;
         margin: 10px 5% !important;
+    }
+    .card4{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .address button{
+        width: 100%;
     }
 }
 @media(max-width: 720px){

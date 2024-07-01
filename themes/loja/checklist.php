@@ -1,7 +1,7 @@
 <?php include_once 'modal.php';?>
 <?php include_once 'header.php';?>
 
-<article class="open_modal">
+<article class="open_modal" style="display: none;">
     <div class="open_container">
         <p class="text-right">
             <a href="#" class="btn_delete redius modal-close" title="Fechar">
