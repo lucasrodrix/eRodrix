@@ -1,13 +1,15 @@
 <!-- <?php include_once 'modal.php';?> -->
 <?php include_once 'header.php';?>
 
-<article class="open_modal">
+<article class="open_modal modal_address" style="display: none;">
     <div class="open_container">
-        <p class="text-right">
-            <a href="#" class="btn_delete redius modal-close" title="Fechar">
-                <i class="fa fa-times-circle"></i>
-            </a>
-        </p>
+        <div class="modal_container_close">
+            <p class="text-right close">
+                <a href="#" class="btn_delete redius modal-close" title="Fechar">
+                    <i class="fa fa-times-circle"></i>
+                </a>
+            </p>
+        </div>
         <div class="address">
             <h2 class="textleft m-text-center font-text-min title_checklist">Cadastrar Novo Endereço:</h2>
             <div class="container_action">
@@ -70,8 +72,8 @@
                 </p>
                 <p class="text-center font-weight-medium color-dark font-text-sub">Novo Endereço</p>
                 <p class="text-center color-dark font-text-sub actions">
-                    <a href="#" class="radius btn_new modal_adress" data-id="1">
-                        <i class="fa fa-street-view"></i>Cadastrar
+                    <a href="#" class="radius btn_new open_adress">
+                        <i class="fa fa-street-view"></i> Cadastrar
                     </a>
                 </p>
             </div>

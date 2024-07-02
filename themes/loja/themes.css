@@ -393,6 +393,171 @@
     padding: 6px 12px !important;
 }
 
+/* Modal Buy */
+.open_container .paragraph_navigator{
+    width: 80%;
+    padding: 10px 10px;
+    margin: 10px 30px;
+    font-size: 0.8em;
+    color: #fff;
+}
+.open_container .modal_container_close{
+    margin-top: -15px !important;
+    right: 19% !important;
+    position: fixed;
+    z-index: 200;
+}
+.open_container .modal_container_close a{
+    padding: 10px 20px !important;
+}
+.open_container .paragraph_navigator a{
+    color: #fff;
+}
+.open_container .details_paragraph{
+    margin: 10px 0 2px 0;
+    color: #333;
+    font-size: 0.8em;
+}
+.open_container .price_discount{
+    padding: 5px 5px;
+    font-size: 0.7em;
+    background-color: #6f7882;
+    color: #fff;
+    margin-top: -10px;
+    margin-left: -25px;
+    position: fixed;
+    z-index: 200;
+}
+.open_container .tags{
+    display: inline-block;
+    margin-top: 10px;
+}
+.open_container .tp_color_gray{
+    background-color: #6f7882;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5px;
+    color: #fff;
+    font-size: 0.8em;
+}
+.open_container .tp_color_blue{
+    background-color: #0077aa;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5px;
+    color: #fff;
+    font-size: 0.8em;
+}
+.open_container .tp_color_red{
+    background-color: #d4383a;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5px;
+    color: #fff;
+    font-size: 0.8em;
+}
+.open_container .tp_color_green{
+    background-color: #247c40;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5px;
+    color: #fff;
+    font-size: 0.8em;
+}
+.open_container .tp_color_white{
+    background-color: #eeeeee;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5px;
+    color: #fff;
+    font-size: 0.8em;
+}
+.open_container .container_action{
+    padding: 10px 0;
+    margin: 20px 0;
+}
+.open_container .footer_contact{
+    margin-top: 10px !important;
+}
+.open_container .footer_socials{
+    padding: 4px 8px;
+    margin-right: 5px;
+    color: #333;
+    background-color: #eee;
+}
+.open_container .footer_socials:hover{
+    background-color: #ccc;
+}
+.open_container .img-small img{
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+.open_container input[type=number]{
+    background-color: #eee;
+    padding: 5px 10px;
+    margin: 10px 5px 10px 0;
+    color: #666;
+    font-size: 0.8em;
+    width: 70px;
+    text-align: center;
+}
+.open_container button{
+    padding: 5px 10px;
+    margin: 10px 5px 10px 0;
+    font-size: 0.8em;
+    text-align: center;
+}
+.open_container .tabs{
+    padding: 8px 16px;
+    background-color: #eee;
+    color: #333;
+}
+.open_container .tabs a{
+    padding: 5px 10px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.open_container .tabs a:hover{
+    background-color: #fff;
+}
+.open_container .tabs .active{
+    padding: 5px 10px;
+    color: #56a700;
+}
+.open_container p{
+    margin : 10px 0;
+}
+.open_container .description_paragraph{
+    margin: 10px 0;
+    padding: 10px 0;
+    display: block;
+}
+.open_container .description_chars{
+    margin: 10px 0;
+    padding: 10px 0;
+    display: none;
+}
+.open_container .description_commentary{
+    margin: 10px 0;
+    padding: 10px 0;
+    display: block;
+}
+.open_container .comment{
+    margin: 10px 0;
+    padding: 10px 0;
+    display: block;
+}
+.open_container .comment textarea{
+    background-color: #eee;
+    padding: 10px 20px;
+    margin : 10px 0;
+    color: #666;
+    font-size: 0.875em;
+    width: 100%;
+    height: 240px;
+}
+
 /* Modal Endereço */
 .address{
     width: 96%;
