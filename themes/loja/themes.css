@@ -582,6 +582,39 @@
     margin-top: 15px !important;
 }
 
+/* Payments */
+.payment .modal_payment{
+    padding: 10px 30px !important;
+    font-size: 1.2em;
+}
+.payment img{
+    width: 60%;
+    margin: 0 20px;
+}
+.payment h2{
+    margin: 0 8px;
+}
+.payment label{
+    display: block;
+    margin: 8px 0;
+}
+.payment input[type=text], input[type=email]{
+    display: block;
+    padding: 8px 16px;
+    background-color: #eee;
+    width: 100%;
+}
+.payment select{
+    display: block;
+    padding: 8px 16px;
+    background-color: #eee;
+    width: 100%;
+}
+.payment button{
+    display: block;
+    padding: 10px 30px !important;
+    margin-top: 15px !important;
+}
 /*Responsividade*/
 @media(max-width: 1200px){
     table th, table td{
@@ -681,6 +714,15 @@
     }
     .address button{
         width: 100%;
+    }
+    .payment button{
+        width: 100%;
+        display: block;
+    }
+    .payment img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 @media(max-width: 720px){
