@@ -474,7 +474,7 @@
 }
 .open_container .container_action{
     padding: 10px 0;
-    /* margin: 20px 0; */
+    margin: 20px 0;
 }
 .open_container .footer_contact{
     margin-top: 10px !important;
@@ -615,6 +615,23 @@
     padding: 10px 30px !important;
     margin-top: 15px !important;
 }
+
+/* Página de Obrigado */
+.information{
+    width: 50%;
+    margin: 50px 25%;
+    padding: 30px 20px;
+}
+.information p{
+    margin-top: 10px;
+}
+.information .btnThanks{
+    margin-top: 40px !important;
+}
+.infoScroll{
+    overflow-x: hidden !important;
+}
+
 /*Responsividade*/
 @media(max-width: 1200px){
     table th, table td{
@@ -719,10 +736,19 @@
         width: 100%;
         display: block;
     }
-    .open_modal img{
+    .open_modal img, .payment img{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .infoScroll{
+        overflow-x: hidden !important;
+    }
+    .information{
+        width: 90%;
+        margin: 50px 5%;
+        padding: 30px 20px;
+        overflow-x: hidden;
     }
 }
 @media(max-width: 720px){
