@@ -1,4 +1,4 @@
-<!-- <?php include_once 'modal.php';?> -->
+<?php include_once 'payment.php';?>
 <?php include_once 'header.php';?>
 <main class="container">
     <section class="container_main">

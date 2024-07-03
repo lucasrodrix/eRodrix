@@ -25,4 +25,14 @@ $(document).ready(function(){
     $('.close').click(function(e){
         $('.modal_address').css('display', 'none');
     });
+
+    //Abrir Modal de Pagamento
+    $('.modal_payment').click(function(e){
+        $('.paymentData').css('display', 'flex');
+    });
+
+    //Fechar Modal de Pagamento
+    $('.close').click(function(e){
+        $('.paymentData').css('display', 'none');
+    });
 });

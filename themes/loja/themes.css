@@ -474,7 +474,7 @@
 }
 .open_container .container_action{
     padding: 10px 0;
-    margin: 20px 0;
+    /* margin: 20px 0; */
 }
 .open_container .footer_contact{
     margin-top: 10px !important;
@@ -583,34 +583,34 @@
 }
 
 /* Payments */
-.payment .modal_payment{
+.open_modal .modal_payment{
     padding: 10px 30px !important;
     font-size: 1.2em;
 }
-.payment img{
+.open_modal img{
     width: 60%;
     margin: 0 20px;
 }
-.payment h2{
+.open_modal h2{
     margin: 0 8px;
 }
-.payment label{
+.open_modal label{
     display: block;
     margin: 8px 0;
 }
-.payment input[type=text], input[type=email]{
+.open_modal input[type=text], input[type=email]{
     display: block;
     padding: 8px 16px;
     background-color: #eee;
     width: 100%;
 }
-.payment select{
+.open_modal select{
     display: block;
     padding: 8px 16px;
     background-color: #eee;
     width: 100%;
 }
-.payment button{
+.open_modal button{
     display: block;
     padding: 10px 30px !important;
     margin-top: 15px !important;
@@ -715,11 +715,11 @@
     .address button{
         width: 100%;
     }
-    .payment button{
+    .open_modal button{
         width: 100%;
         display: block;
     }
-    .payment img{
+    .open_modal img{
         display: flex;
         align-items: center;
         justify-content: center;
