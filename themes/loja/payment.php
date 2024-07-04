@@ -8,24 +8,28 @@
             </p>
         </div>
         <div class="payment">
-            <h2 class="textleft m-text-center font-text-min title_checklist">Efetue o pagamento do seu Pedido:</h2>
+            <h2 class="text-center font-text-min title_checklist">Efetue o pagamento do seu Pedido:</h2>
             <div class="container_action">
-                <form action="#" method="post" id="form_payment">
+                <form method="post" id="form_payment">
                     <input type="hidden" name="input_id" id="input_id" value="">
                     <input type="hidden" name="input_pay" id="input_pay" value="">
                     <img src="<?= $configBase ?>images/general/mercadopago.png" title="Imagem do Pagamento" alt="Imagem do Pagamento" id="img_pay">
                     <div class="clear"></div>
                     <div class="divisor2">
-                        <label for="fullname">Titular do Cartão: <input type="text" class="" name="fullname" id="fullname"></label>
+                        <label for="fullname">Titular do Cartão:</label>
+                        <input type="text" class="" name="fullname" id="fullname">
                     </div>
                     <div class="divisor2">
-                        <label for="cardNumber">Número do Cartão: <input type="text" class="" name="cardNumber" id="cardNumber"></label>
+                        <label for="cardNumber">Número do Cartão:</label>
+                        <input type="text" class="" name="cardNumber" id="cardNumber">
                     </div>
                     <div class="divisor2">
-                        <label for="cardDate">Validade: <input type="text" class="" name="cardDate" id="cardDate"></label>
+                        <label for="cardDate">Validade:</label>
+                        <input type="text" class="" name="cardDate" id="cardDate">
                     </div>
                     <div class="divisor2">
-                        <label for="cardCvv">CVV: <input type="text" class="" name="cardCvv" id="cardCvv"></label>
+                        <label for="cardCvv">CVV:</label>
+                        <input type="text" class="" name="cardCvv" id="cardCvv">
                     </div>                    
                     <div class="divisor2">
                         <label for="cardShipping">Parcela: </label>
@@ -45,13 +49,16 @@
                         </select>
                     </div>
                     <div class="divisor2">
-                        <label for="proprietyCpf">CPF: <input type="text" class="proprietyCpf" name="proprietyCpf" id="proprietyCpf" required></label>
+                        <label for="proprietyCpf">CPF:</label>
+                        <input type="text" class="proprietyCpf" name="proprietyCpf" id="proprietyCpf" required>
                     </div>
                     <div class="divisor2">
-                        <label for="proprietyEmail">E-mail: <input type="text" class="proprietyEmail" name="proprietyEmail" id="proprietyEmail"></label>
+                        <label for="proprietyEmail">E-mail:</label>
+                        <input type="email" class="proprietyEmail" name="proprietyEmail" id="proprietyEmail">
                     </div>
                     <div class="divisor2">
-                        <label for="proprietyPhone">Telefone: <input type="text" class="proprietyPhone" name="proprietyPhone" id="proprietyPhone"></label>
+                        <label for="proprietyPhone">Telefone:</label>
+                        <input type="text" class="proprietyPhone" name="proprietyPhone" id="proprietyPhone">
                     </div>
                     <div class="divisor2">
                         <br>

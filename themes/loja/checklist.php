@@ -16,26 +16,33 @@
                 <form action="#" method="post" id="form_address">
                     <input type="hidden" name="input_id" id="input_id" value="">
                     <div class="divisor2">
-                        <label for="zipcode">CEP: <input type="text" class="zipcode" name="zipcode" id="zipcode"></label>
+                        <label for="zipcode">CEP:</label>
+                        <input type="text" class="zipcode" name="zipcode" id="zipcode">
                     </div>
                     <div class="divisor2">
-                        <label for="address">Endereço: <input type="text" class="address" name="address" id="address"></label>
+                        <label for="address">Endereço:</label>
+                        <input type="text" class="address" name="address" id="address">
                     </div>
                     <div class="clear"></div>
                     <div class="divisor3">
-                        <label for="number">Número: <input type="text" class="number" name="number" id="number"></label>
+                        <label for="number">Número:</label>
+                        <input type="text" class="number" name="number" id="number">
                     </div>
                     <div class="divisor3">
-                        <label for="complement">Complemento: <input type="text" class="complement" name="complement" id="complement"></label>
+                        <label for="complement">Complemento:</label>
+                        <input type="text" class="complement" name="complement" id="complement">
                     </div>
                     <div class="divisor3">
-                        <label for="neighborhood">Bairro: <input type="text" class="neighborhood" name="neighborhood" id="neighborhood"></label>
+                        <label for="neighborhood">Bairro:</label>
+                        <input type="text" class="neighborhood" name="neighborhood" id="neighborhood">
                     </div>
                     <div class="divisor3">
-                        <label for="city">Cidade: <input type="text" class="city" name="city" id="city"></label>
+                        <label for="city">Cidade:</label>
+                        <input type="text" class="city" name="city" id="city">
                     </div>
                     <div class="divisor3">
-                        <label for="state">Estado: <input type="text" class="state" name="state" id="state"></label>
+                        <label for="state">Estado:</label>
+                        <input type="text" class="state" name="state" id="state">
                     </div>
                     <div class="divisor3">
                         <br>
@@ -84,7 +91,7 @@
                     <p class="text-center font-weight-medium color-dark font-text-sub">CEP: 12.345-678</p>
                     <p class="text-center color-dark font-text-sub actions">
                         <a href="#" class="radius btn_edit modal_adress" data-id="<?=$i?>">
-                            <i class="fa fa-truck"></i>Enviar para este Endereço
+                            <i class="fa fa-truck"></i> Enviar Aqui
                         </a>
                     </p>
                 </div>                

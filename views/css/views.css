@@ -8,7 +8,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     font-size: 1em;
-    font-family: Nunito, sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 body{
     background-color: #ffffff;
@@ -442,7 +442,7 @@ button.status-close-button{
 }
 .open_modal{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     margin: 0;
     position: fixed;
     top: 0;
@@ -468,6 +468,9 @@ button.status-close-button{
         width: 90%;
         margin: 0 5%;
         top: 60px;
+    }
+    .open_container .modal_container_close{
+        right: 4%;
     }
 }
 

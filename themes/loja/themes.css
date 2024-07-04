@@ -561,7 +561,7 @@
 /* Modal Endereço */
 .address{
     width: 96%;
-    margin: 10px 2%;
+    margin: 8px 2%;
 }
 .address h2{
     margin: 0 8px;
@@ -583,34 +583,39 @@
 }
 
 /* Payments */
-.open_modal .modal_payment{
-    padding: 10px 30px !important;
-    font-size: 1.2em;
+.payment a{
+    padding: 6px 12px !important;
+    font-size: 1em;
 }
-.open_modal img{
+.payment img{
     width: 60%;
-    margin: 0 20px;
+    margin: 0 20%;
 }
-.open_modal h2{
-    margin: 0 8px;
+.paymentData img{
+    width: 30%;
+    margin: 0 35%;
 }
-.open_modal label{
+.paymentData .title_checklist{
+    margin: 10px 8px;
+}
+.paymentData label{
     display: block;
-    margin: 8px 0;
+    margin: 1px 0;
 }
-.open_modal input[type=text], input[type=email]{
+.paymentData input[type=text], 
+.paymentData input[type=email]{
     display: block;
     padding: 8px 16px;
     background-color: #eee;
     width: 100%;
 }
-.open_modal select{
+.paymentData select{
     display: block;
     padding: 8px 16px;
     background-color: #eee;
     width: 100%;
 }
-.open_modal button{
+.paymentData button{
     display: block;
     padding: 10px 30px !important;
     margin-top: 15px !important;
@@ -726,8 +731,9 @@
         margin: 10px 5% !important;
     }
     .card4{
-        width: 100%;
-        margin: 10px 0;
+        width: 98% !important;
+        margin: 10px 2% 10px 0;
+        display: block;
     }
     .address button{
         width: 100%;
@@ -765,6 +771,12 @@
         font-size: 0.9em;
         padding: 6px 6px;
         text-align: center;
+    }
+    .open_container .modal_container_close{
+        right: 4% !important;
+    }    
+    .open_container .modal_container_close a{
+        padding: 6px 12px !important;
     }
 }
 @media(max-width: 640px){

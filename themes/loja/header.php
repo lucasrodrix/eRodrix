@@ -224,7 +224,7 @@
             <a href="<?= $configBase?>categories/shoes" title="Conheça nossos Calçados">
                 <li>Calçados</li>
             </a>
-            <a href="<?= $configBase?>categories/shoes" title="Conheça nossas Roupas">
+            <a href="<?= $configBase?>categories/clothes" title="Conheça nossas Roupas">
                 <li>Roupas</li>
             </a>
             <a href="<?= $configBase?>cart" title="Confira seu carrinho" class="radius">
