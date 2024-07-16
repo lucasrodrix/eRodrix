@@ -2,7 +2,7 @@
     //iniciar sessão
     session_start();
 
-    //Configuraç~çao da Data e Hora do Servidor
+    //Configuração da Data e Hora do Servidor
     date_default_timezone_set('America/Sao_Paulo');
 
     //Configurações do site
@@ -27,6 +27,7 @@
     $themeAdmin = 'themes/admin';
 
     //Configurações do Banco de Dados
+    $category = 'categories';
 
     //Configurações dos Perfis de Acesso
 

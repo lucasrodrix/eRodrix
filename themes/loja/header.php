@@ -218,15 +218,19 @@
 
     <div class="header_footer">
         <ul class="navigator">
-            <a href="<?= $configBase?>categories/offers" title="Conheça nossas Promoções">
-                <li>Promoções</li>
-            </a>
-            <a href="<?= $configBase?>categories/shoes" title="Conheça nossos Calçados">
-                <li>Calçados</li>
-            </a>
-            <a href="<?= $configBase?>categories/clothes" title="Conheça nossas Roupas">
-                <li>Roupas</li>
-            </a>
+            <?php 
+                $read = $pdo->prepare("SELECT category_name, category_url, status FROM {$category} WHERE status = :status");
+                $read->bindValue(":status", 1);
+                $read->execute();
+
+                $lines = $read->rowCount();
+                
+                foreach($read as $categories):
+            ?>
+                <a href="<?= $configBase?>categories/<?= strip_tags($categories['category_url'])?>" title="Conheça nossas <?= strip_tags($categories['category_name'])?>">
+                    <li><?= strip_tags($categories['category_name'])?></li>
+                </a>
+            <?php endforeach; ?>
             <a href="<?= $configBase?>cart" title="Confira seu carrinho" class="radius">
                 <li>
                     <span>99</span>

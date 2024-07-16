@@ -1,5 +1,6 @@
 <?php 
    require_once "core/config.php";
+   require_once "core/database/connection.php";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
