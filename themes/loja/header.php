@@ -227,8 +227,8 @@
                 
                 foreach($read as $categories):
             ?>
-                <a href="<?= $configBase?>categories/<?= strip_tags($categories['category_url'])?>" title="Conheça nossas <?= strip_tags($categories['category_name'])?>">
-                    <li><?= strip_tags($categories['category_name'])?></li>
+                <a href="<?= $configBase?>categories/<?= strip_tags($categories['category_url']);?>" title="Conheça nossas <?= strip_tags($categories['category_name']);?>">
+                    <li><?= strip_tags($categories['category_name']);?></li>
                 </a>
             <?php endforeach; ?>
             <a href="<?= $configBase?>cart" title="Confira seu carrinho" class="radius">

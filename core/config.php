@@ -28,6 +28,7 @@
 
     //Configurações do Banco de Dados
     $category = 'categories';
+    $product = 'products';
 
     //Configurações dos Perfis de Acesso
 
