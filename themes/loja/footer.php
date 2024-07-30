@@ -70,15 +70,19 @@
                 <a href="<?= $configBase?>categories" title="Navegue em nossas Categorias" class="radius">
                     <li>Categorias</li>
                 </a>
-                <a href="<?= $configBase?>offers" title="Navegue em nossas Promoções" class="radius">
-                    <li>Promoções</li>
-                </a>
-                <a href="<?= $configBase?>shoes" title="Navegue em nossa categoria de Calçados" class="radius">
-                    <li>Calçados</li>
-                </a>
-                <a href="<?= $configBase?>clothes" title="Navegue em nossa categoria de Roupas" class="radius">
-                    <li>Roupas</li>
-                </a>
+                <?php 
+                    $read = $pdo->prepare("SELECT category_name, category_url, status FROM {$category} WHERE status = :status");
+                    $read->bindValue(":status", 1);
+                    $read->execute();
+
+                    $lines = $read->rowCount();
+
+                foreach($read as $categories):
+                ?>
+                    <a href="<?= $configBase?>categories/<?= strip_tags($categories['category_url']);?>" title="Conheça nossas <?= strip_tags($categories['category_name']);?>">
+                        <li><?= strip_tags($categories['category_name']);?></li>
+                    </a>
+                <?php endforeach; ?>
                 <a href="<?= $configBase?>register" title="Cadastre-se em nossa Loja!" class="radius">
                     <li><i class="fas fa-user"></i>Cadastre-se</li>
                 </a>
