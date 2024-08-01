@@ -1,5 +1,25 @@
 <?php include_once 'modal.php';?>
 <?php include_once 'header.php';?>
+<?php 
+    $Read = $pdo->prepare("SELECT a.product_guid, a.category_id, a.product_name, a.product_headline, a.product_url, a.product_thumb, a.product_price, a.product_offers, a.product_price_old, a.product_description, a.product_tags, a.status, b.product_id, b.stock_quantity, b.color_id, b.status, c.category_guid, c.category_name 
+    FROM products a 
+        INNER JOIN stock b ON(b.product_id = a.product_guid) 
+        INNER JOIN categories c ON(c.category_guid  = a.category_id)
+        WHERE a.product_url = :product_url");
+    $Read->bindValue(":product_url", $configUrl[1]);
+    $Read->execute();
+
+    if($Read->rowCount() == 0){
+        echo "<div class='alert-info radius'>Ocorreu um erro, tente novamente!</div>";
+    }
+
+    foreach($Read as $Show){
+        $stock = $Show['stock_quantity'];
+        $category = strip_tags($Show['category_name']);
+    }
+
+    $tags = explode(', ', $Show['product_tags']);
+?>
 
 <main class="container">
     <section class="container_main">
@@ -17,11 +37,11 @@
         <div class="container_controller">
             <div class="container_details">
                 <div class="divisor2">
-                    <p class="text-left font-weight-medium price_discount radius">10% OFF</p>
-                    <img src="<?= $configBase ?>images/products/product.png" alt="Imagem do Produto: Tenis Adidas Sporting" alt="Imagem do Produto: Tenis Adidas Sporting">
+                    <?= ($Show['product_offers'] == 0 ||empty($Show['product_offers']) ? '' : '<p class="text-left font-weight-medium price_discount radius"> '.strip_tags($Show['product_offers']).'% OFF</p>')?></p>
+                    <img src="<?= $configBase ?>images/products/<?= strip_tags($Show['product_thumb']);?>" alt="Imagem do Produto: <?= strip_tags($Show['product_name']);?>" alt="Imagem do Produto: <?= strip_tags($Show['product_name']);?>">
                     <div class="img-small">
                         <?php for($i = 1; $i <= 5; $i++): ?>
-                            <img src="<?= $configBase ?>images/details/product-detail-<?= $i ?>.png" title="Visualize detalhes do Tenis Adidas Sporting" alt="Visualize detalhes do Tenis Adidas Sporting" class="divisor4">
+                            <img src="<?= $configBase ?>images/details/product-detail-<?= $i ?>.png" title="Visualize detalhes do <?= strip_tags($Show['product_name'])?>" alt="Visualize detalhes do <?= strip_tags($Show['product_name'])?>" class="divisor4">
                         <?php endfor; ?>
                     </div>
                     <div class="clear"></div>
@@ -29,14 +49,14 @@
                 <div class="divisor2">
                     <h2 class="text-left m-text-center font-weight-medium font-text-min">Tenis Adidas Sporting</h2>
                     <p class="text-left m-text-center font-text-min">
-                        <span class="price_old radius font-text-sub radius"><s>R$ 450,00</s></span>
-                        <span class="price_off radius font-text-min font-weight-medium"><s>R$ 320,00</s></span>
+                        <span class="price_old radius font-text-sub radius"><s>R$ <?= number_format($Show['product_price_old'],2,',','.')?></s></span>
+                        <span class="price_off radius font-text-medium font-weight-medium">R$ <?= number_format($Show['product_price'],2,',','.')?></span>
                     </p>
                     <p class="text-left m-text-center font-text-sub details_paragraph">
-                        Estoque Atual: 07 Unidades.
+                        Estoque Atual: <?= number_format($stock,0,',','.')?> Unidades.
                     </p>
                     <p class="text-left m-text-center font-wtext-sub">
-                        Fugiat, sit ratione impedit sunt corporis dolorum debitis animi reiciendis aliquid quidem officiis autem deserunt illum exercitationem sint, enim odit hic odio!
+                        <?= strip_tags($Show['product_headline']);?>
                     </p>
                     <p class="text-left m-text-center font-text-sub details_paragraph">
                         Tamanhos Disponíveis:
